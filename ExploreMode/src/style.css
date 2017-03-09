@@ -1,0 +1,82 @@
+
+#cAppCont {
+
+  width: 400px;
+  height: 510px;
+  margin: auto;
+}
+
+#cCalcBox {
+
+  width: 380px;
+  height: 490px;
+  border: 1px solid #000;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #AAA;
+}
+
+#cDisplay {
+
+  width: 275px;
+  height: 85px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  background-color: #CCC;
+}
+
+#cDisplayText {
+
+  font-size: 40px;
+  text-align: right;
+  padding-right: 20px; 
+  line-height: 5px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+   
+}
+
+#cKeyPad {
+  
+  width: 370px;
+  height: 380px;
+  border: 1px solid #000;
+  margin: auto;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: flex-start; 
+  background-color: #999;
+}
+
+
+.cKey {
+  
+  width: 85px;
+  height: 85px;
+  margin-top: 5px;
+  border: 1px solid #000;
+  margin-bottom: 2px;
+  background-color: #EEE;
+  font-size: 30px;
+  text-align: center;
+  line-height: 85px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+
+}
+
+
+
+#cTopCont {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#cClear {
+
+}
+
+
