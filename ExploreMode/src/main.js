@@ -1,13 +1,14 @@
 
 $(document).ready(function(){
 
+// add sub text for operator ?
+
+// add parenth
 
   var cDisplayText = "",
-      cCalcBoo = false,
       cOper = "",
       calcString = "",
-      origColor = ""
-
+      origColor = "" // I dont like this hover work around 
 
 
   $(".cKey, .cOper").hover(function() { 
@@ -25,26 +26,22 @@ $(document).ready(function(){
   })
 
 
-
 $("body").keyup(function(e) {
 
-if (e.which == 27) {
+  if (e.which == 27) {
 
+    calcString = ""
 
-      calcString = ""
+    cDisplayText = ""
 
-      cDisplayText = ""
+    $("#cDisplayText").text(0) 
 
-      $("#cDisplayText").text(0) 
-
-    }
-
+  }
 
 })
 
+
 $("body").keypress(function(e) {
-
-
 
   if (e.which !== 0) { 
 
@@ -356,69 +353,3 @@ function cSetDec(c) {
 
 //!!
 })
-
-
-
-
-/*
-
-
-for (var i = 0; i < calcString.length; i += 1) {
-    
-
-    if (calcString.charAt(i) == '+') {
-
-
-      var calcStringSplit = calcString.split('+')
-
-      calcString = (cAdd(Number(calcStringSplit[0]), Number(calcStringSplit[1])))
-
-      $("#cDisplayText").text(cAdd(Number(calcStringSplit[0]), Number(calcStringSplit[1])))
-
-
-    }
-
-  } // FOR ( i )
-
-
-
-
-
-//>>>>>>>>>>>
-
-
-$("body").keyup(function(){
-
-      if () {
-
-        cCalNum1 += "1"
-      }
-      
-
-    $("#cDisplayText").text(cCalNum1)
-
-  })
-
-
-
-        <div id="cKey1" class="cKey">1</div>
-        <div id="cKey2" class="cKey">2</div>
-        <div id="cKey3" class="cKey">3</div>
-        <div id="cKeyD" class="cKey">/</div>
-
-        <div id="cKey4" class="cKey">4</div>
-        <div id="cKey5" class="cKey">5</div>
-        <div id="cKey6" class="cKey">6</div>
-        <div id="cKeyX" class="cKey">X</div>
-
-        <div id="cKey7" class="cKey">7</div>
-        <div id="cKey8" class="cKey">8</div>
-        <div id="cKey9" class="cKey">9</div>
-        <div id="cKeyM" class="cKey">-</div>
-
-        <div id="cKey0" class="cKey">0</div>
-        <div id="cKeyP" class="cKey">.</div>
-        <div id="cKeyE" class="cKey">=</div>
-        <div id="cKeyS" class="cKey">+</div>
-
-*/
