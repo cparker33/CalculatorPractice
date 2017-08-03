@@ -1,14 +1,10 @@
 
 $(document).ready(function(){
 
-// add sub text for operator ?
-
-// add parenth
-
   var cDisplayText = "",
       cOper = "",
       calcString = "",
-      origColor = "" // I dont like this hover work around 
+      origColor = ""
 
 
   $(".cKey, .cOper").hover(function() { 
